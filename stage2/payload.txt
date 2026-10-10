@@ -1,0 +1,2 @@
+Internal staging host: 10.10.12.2
+SHADOW{steg_b3ce83}
