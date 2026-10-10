@@ -7,7 +7,7 @@
 | 1 | OSINT – The Raven’s Trail | ☐ | ☐ | ☐ | | | |
 | 2 | Stego – Hidden in Plain Sight | ☐ | ☐ | ☐ | | | |
 | 3 | Network – Mapping the Nest | ☐ | ☐ | ☐ | | | |
-| 4 | Web – The Broker’s Portal | ☐ | ☐ | ☐ | | | |
+| 4 | Web – The Broker’s Portal | ✅ | ✅ | ✅ |Jayasundara | 11/10/2026| SQL Injection login bypass works. Flag + download ok|
 | 5 | Forensics – Autopsy of a Payload | ☐ | ☐ | ☐ | | | |
 | 6 | Linux – Root of the Collective | ☐ | ☐ | ☐ | | | |
 
