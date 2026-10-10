@@ -1,0 +1,27 @@
+services:
+  forum:
+    image: nginx:alpine
+    container_name: shadowtrace-forum
+    ports:
+      - "8081:80"
+    volumes:
+      - ./forum:/usr/share/nginx/html:ro
+    restart: unless-stopped
+
+  paste:
+    image: nginx:alpine
+    container_name: shadowtrace-paste
+    ports:
+      - "8082:80"
+    volumes:
+      - ./paste:/usr/share/nginx/html:ro
+    restart: unless-stopped
+
+  images:
+    image: nginx:alpine
+    container_name: shadowtrace-images
+    ports:
+      - "8083:80"
+    volumes:
+      - ./images:/usr/share/nginx/html:ro
+    restart: unless-stopped
