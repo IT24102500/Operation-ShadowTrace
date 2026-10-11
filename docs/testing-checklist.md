@@ -4,12 +4,12 @@
 
 | Stage | Name | Functional | Flag Integrity | Isolation/Reset | Tester | Date | Notes |
 |-------|------|------------|----------------|-----------------|--------|------|-------|
-| 1 | OSINT – The Raven’s Trail | ☐ | ☐ | ☐ | | | |
-| 2 | Stego – Hidden in Plain Sight | ☐ | ☐ | ☐ | | | |
-| 3 | Network – Mapping the Nest | ☐ | ☐ | ☐ | | | |
+| 1 | OSINT – The Raven’s Trail | ✅ | ✅ | ✅ | Lakmi Ylegama | 11/10/2026| |
+| 2 | Stego – Hidden in Plain Sight | ✅ | ✅ | ✅ | Sithumini Herath | 11/10/2026| |
+| 3 | Network – Mapping the Nest | ✅ | ✅ | ✅ | Arith Bandara | 11/10/2026| |
 | 4 | Web – The Broker’s Portal | ✅ | ✅ | ✅ |Hiruni Jayasundara | 11/10/2026| SQL Injection login bypass works. Flag + download ok|
-| 5 | Forensics – Autopsy of a Payload | ☐ | ☐ | ☐ | | | |
-| 6 | Linux – Root of the Collective | ☐ | ☐ | ☐ | | | |
+| 5 | Forensics – Autopsy of a Payload | ✅ | ✅ | ✅ | Lakmi Yalegama |11/10/2026 | |
+| 6 | Linux – Root of the Collective | ✅ | ✅ | ✅ | Aritha Bandara | 11/10/2026| |
 
 ## Test Criteria
 
