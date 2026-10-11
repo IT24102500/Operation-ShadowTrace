@@ -1,0 +1,21 @@
+networks:
+  stage6-net: {}
+
+services:
+  stage6-linux:
+    build: .
+    container_name: shadowtrace-stage6
+    restart: unless-stopped
+    ports:
+      - "2222:22"     # SSH only, per Section 6.3 of the design report
+    networks:
+      - stage6-net
+    mem_limit: "512m"
+    cpus: "1.0"
+    # NOTE: "no internet egress" (Section 6.4) can't be done with a plain
+    # `internal: true` network here - Docker's internal-network flag also
+    # strips the NAT rules needed for the `ports:` mapping above, which is
+    # why SSH was unreachable. If you need egress truly blocked for the
+    # report/demo, do it as a firewall rule on the Docker host instead, e.g.:
+    #   sudo iptables -I DOCKER-USER -i br-<stage6-net-id> ! -d <host-lan> -j DROP
+    # (get the bridge id with `docker network inspect stage6-linux_stage6-net`)
