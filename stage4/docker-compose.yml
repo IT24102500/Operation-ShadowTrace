@@ -1,3 +1,6 @@
+networks:
+  stage4-net: {}
+
 services:
   stage4-web:
     build: .
@@ -7,4 +10,6 @@ services:
       - ./src:/var/www/html
       - ./db:/var/www/db
       - ./files:/var/www/files
+    networks:
+      - stage4-net
     restart: unless-stopped

@@ -1,3 +1,6 @@
+networks:
+  stage1-net: {}
+
 services:
   forum:
     image: nginx:alpine
@@ -6,6 +9,8 @@ services:
       - "8081:80"
     volumes:
       - ./forum:/usr/share/nginx/html:ro
+    networks:
+      - stage1-net
     restart: unless-stopped
 
   paste:
@@ -15,6 +20,8 @@ services:
       - "8082:80"
     volumes:
       - ./paste:/usr/share/nginx/html:ro
+    networks:
+      - stage1-net
     restart: unless-stopped
 
   images:
@@ -24,4 +31,6 @@ services:
       - "8083:80"
     volumes:
       - ./images:/usr/share/nginx/html:ro
+    networks:
+      - stage1-net
     restart: unless-stopped
